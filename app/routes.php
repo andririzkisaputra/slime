@@ -15,6 +15,8 @@ return function (App $app) {
     });
 
     $app->get('/', function (Request $request, Response $response) {
+        // print_r($request);
+        // exit;
         $response->getBody()->write('Hello world!');
         return $response;
     });
